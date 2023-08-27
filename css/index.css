@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+
+#section1 {
+  background: linear-gradient(
+      135deg,
+      rgba(255, 0, 0, 0.29),
+      rgba(255, 0, 0, 0.29)
+    ),
+    url("../img/bg.jpg");
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+#section1 .menu {
+  height: 100%;
+  width: 350px;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: start;
+  align-items: center;
+  
+}
+
+#section1 .menu .bar {
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 350px;
+  position: relative;
+  display: none;
+  left: 0;
+  overflow: hidden;
+
+}
+
+#section1 .menu .icon {
+  margin-left: 10px;
+}
+
+.close{
+  top: 3%;
+  right: 10%;
+  position: absolute;
+  cursor: pointer;
+}
+
+
+#section1 .menu .bar ul li a{
+  color: white !important;
+  transition: .2s;
+}
+#section1 .menu .bar ul li a:hover{
+  color: #712641 !important;
+}
+
+
+
+ul{
+  position: relative;
+  top: 20%;
+}
+
+#section2{
+  overflow-x: hidden;
+
+}
+#section2 div{
+  background-color: rgb(234, 149, 163);
+  padding: 0;
+}
+
+
+#section2 .container{
+  width: 50%;
+}
+
+#timer{
+  overflow-x: hidden;
+
+}
+
+
+#section2 .container .explan{
+display: none;
+background-color: rgb(192, 192, 192);
+}
+
+#section2 .container .mainTitle{
+color: white;
+}
+
+.willBorder{
+
+  border: 1px solid white;
+}
+
+
+#timer{
+  background:linear-gradient(rgba(0, 0, 0, 0.537),rgba(0, 0, 0, 0.537)) ,url('../img/soon.jpg');
+  background-size: 100% 100%;
+  min-height: 80vh;
+}
+
+.socail li{
+  padding: 10px;
+  border: 1px solid #999;
+  padding: 12px;
+  margin-inline: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+.socail li:hover{
+background-color: rgb(197, 53, 53) !important;
+transition: 1s;
+}
+.socail li:hover i{
+color: white;
+}
+
+.socail li i{
+  color: #999;
+  cursor: pointer;
+
+}
+
+
+
