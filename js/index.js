@@ -71,42 +71,32 @@ setInterval(function () {
   }
 }, 1000);
 
-var area = $(".area");
-var areaVal = area.val();
-var numberDown = $(".numberDown");
-var numberCount = Number($(".numberDown").text());
 
 
+$("textarea").on("input" , function(){
+  let areaVal  = $("textarea").val().length;
+
+  $("#numberDown").text(
+    100- areaVal <= 0 ? "Your Available Character is Finished" : 100- areaVal
+  )
 
 
-
-area.on("input", function () {
-  $(".numberDown").text(numberCount);
-  if(areaVal++) {
-    numberCount--;
-  }
-  if(areaVal-1) {
-    numberDown.text(100 - area.val().length)
-  }
-    if(numberCount < 1){
-      numberDown.text("your available character finished");
-    }
-
-  
-
-});
+})
 
 
 
 
 window.addEventListener("scroll" , ()=>{
-  if(window.scrollY > 550){
+  if(window.scrollY > 450){
     document.getElementById("oppo").style.opacity = "0"
   }else{
     document.getElementById("oppo").style.opacity = "1"
 
   }
 })
+
+
+
 
 
 
